@@ -20,8 +20,9 @@
   --black-color: #000000;
 
   /* Others */
-  --indent: 24px;
-  --items: 4;
+  --indent-horizont: 72px;
+  --indent-vertical: 24px;
+  --items: 1;
 }
 
 h1,
@@ -49,12 +50,27 @@ body {
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  /* Basic */
+  min-width: 320px;
+  max-width: 428px;
+  padding: 0 16px;
   margin: 0 auto;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* Desctop */
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }
 
 .list {
@@ -73,7 +89,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
   color: var(--navy-blue);
@@ -85,18 +100,20 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  text-align: center;
+
   color: var(--navy-blue);
 }
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
+  row-gap: var(--indent-horizont);
+  column-gap: var(--indent-vertical);
 }
 
 .card-set-item {
-  flex-basis: calc(100% - var(--indent) * (var(--items) - 1)) / var(--items);
+  flex-basis: calc(100% - var(--indent-vertical) * (var(--items) - 1)) / var(--items);
 }
 
 .visually-hidden {
@@ -286,12 +303,25 @@ body {
   | Section: Our advantages
   |============================
 */
+
 .section-adv {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-adv {
+    padding: 120px 0;
+  }
 }
 
 .section {
-  padding-bottom: 120px;
+  padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-bottom: 120px;
+  }
 }
 
 .adv-container {
