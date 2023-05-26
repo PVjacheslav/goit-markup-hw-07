@@ -152,6 +152,13 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .page-nav  {
+    display: none;
+  }
+}
+
+
 .menu {
   display: flex;
   align-items: center;
@@ -225,6 +232,13 @@ body {
   display: flex;
   margin-left: auto;
 }
+
+@media only screen and (max-width: 767px) {
+  .address  {
+    display: none;
+  }
+}
+
 
 .contact-list {
   font-weight: 400;
@@ -411,6 +425,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1157px) {
+  .section {
+    display: none;
+  }
+}
+
 .work-list {
   --items: 3;
 }
@@ -438,6 +458,8 @@ body {
 } */
 
 .team-list {
+  display: flex;
+  justify-content: center;
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--white);
