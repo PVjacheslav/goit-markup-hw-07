@@ -54,12 +54,12 @@
 
     <main>
       <!-- HERO -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
       <!-- Our advantages -->
       <section class="section-adv">
         <div class="container">
@@ -123,21 +123,39 @@
           <ul class="list work-list card-set">
             <li class="work-img card-set-item">
               <img
-                src="./images/What-are-we-doing/monitor.jpg"
+                srcset="
+                  ./images/What-are-we-doing/monitor_desk@1x.webp 1x,
+                  ./images/What-are-we-doing/monitor_desk@2x.webp 2x,
+                  ./images/What-are-we-doing/monitor_desk@1x.jpg  1x,
+                  ./images/What-are-we-doing/monitor_desk@2x.jpg  2x
+                "
+                src="./images/What-are-we-doing/monitor_desk@1x.jpg"
                 alt="personal account on pc monitor"
                 width="360"
               />
             </li>
             <li class="work-img card-set-item">
               <img
-                src="./images/What-are-we-doing/accounts.jpg"
+                srcset="
+                  ./images/What-are-we-doing/accounts_desk@1x.webp 1x,
+                  ./images/What-are-we-doing/accounts_desk@2x.webp 2x,
+                  ./images/What-are-we-doing/accounts_desk@1x.jpg  1x,
+                  ./images/What-are-we-doing/accounts_desk@2x.jpg  2x
+                "
+                src="./images/What-are-we-doing/accounts_desk@1x.jpg"
                 alt="sync accounts on mobile phone"
                 width="360"
               />
             </li>
             <li class="work-img card-set-item">
               <img
-                src="./images/What-are-we-doing/phone.jpg"
+                srcset="
+                  ./images/What-are-we-doing/phone_desk@1x.webp 1x,
+                  ./images/What-are-we-doing/phone_desk@2x.webp 2x,
+                  ./images/What-are-we-doing/phone_desk@1x.jpg  1x,
+                  ./images/What-are-we-doing/phone_desk@2x.jpg  2x
+                "
+                src="./images/What-are-we-doing/phone_desk@1x.jpg"
                 alt="personal account on mobile phone"
                 width="360"
               />
@@ -151,7 +169,19 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="list team-list card-set">
             <li class="team-bg card-set-item">
-              <img src="./images/Our-team/Guerrero.jpg" alt="smiling man with beard" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/Our-team/Guerrero@1x.webp 1x,
+                  ./images/Our-team/Guerrero@2x.webp 2x,
+                  ./images/Our-team/Guerrero@1x.jpg  1x,
+                  ./images/Our-team/Guerrero@2x.jpg  2x
+                "
+                src="./images/Our-team/Guerrero@1x.webp"
+                alt="smiling man with beard"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-wrapper">
                 <h3 class="title">Mark Guerrero</h3>
                 <p class="prof-name">Product Designer</p>
@@ -212,7 +242,19 @@
               </div>
             </li>
             <li class="team-bg card-set-item">
-              <img src="./images/Our-team/Ford.jpg" alt="young man smiling" width="264" />
+              <img
+                class="team-img"
+                srcset="
+                  ./images/Our-team/Ford@1x.webp 1x,
+                  ./images/Our-team/Ford@2x.webp 2x,
+                  ./images/Our-team/Ford@1x.jpg  1x,
+                  ./images/Our-team/Ford@2x.jpg  2x
+                "
+                src="./images/Our-team/Ford@1x.webp"
+                alt="young man smiling"
+                width="264"
+                loading="lazy"
+              />
               <div class="team-wrapper">
                 <h3 class="title">Tom Ford</h3>
                 <p class="prof-name">Frontend Developer</p>
@@ -274,9 +316,17 @@
             </li>
             <li class="team-bg card-set-item">
               <img
-                src="./images/Our-team/Garcia.jpg"
+                class="team-img"
+                srcset="
+                  ./images/Our-team/Garcia@1x.webp 1x,
+                  ./images/Our-team/Garcia@2x.webp 2x,
+                  ./images/Our-team/Garcia@1x.jpg  1x,
+                  ./images/Our-team/Garcia@2x.jpg  2x
+                "
+                src="./images/Our-team/Garcia@1x.webp"
                 alt="smiling woman with long hair"
                 width="264"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="title">Camila Garcia</h3>
@@ -339,9 +389,17 @@
             </li>
             <li class="team-bg card-set-item">
               <img
-                src="./images/Our-team/Wilson.jpg"
+                class="team-img"
+                srcset="
+                  ./images/Our-team/Wilson@1x.webp 1x,
+                  ./images/Our-team/Wilson@2x.webp 2x,
+                  ./images/Our-team/Wilson@1x.jpg  1x,
+                  ./images/Our-team/Wilson@2x.jpg  2x
+                "
+                src="./images/Our-team/Wilson@1x.webp"
                 alt="smiling young man with a beard"
                 width="264"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="title">Daniel Wilson</h3>
@@ -493,7 +551,7 @@
       </section>
     </main>
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container footer">
         <div class="footer-logo">
           <a class="link logo logo-place" href="./index.html">
@@ -578,7 +636,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal-window -->
     <div class="backdrope is-hidden" data-modal>
       <div class="modal">
@@ -673,7 +731,8 @@
     <!-- Mobile-menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="mobile-icon"
+        <svg
+          class="mobile-icon"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
@@ -689,13 +748,23 @@
       </button>
 
       <ul class="mobile-menu list">
-        <li class="mobile-items"><a href="./index.html" class="link">Studio</a></li>
-        <li class="mobile-items"><a href="" class="link">Portfolio</a></li>
-        <li class="mobile-items"><a href="" class="link">Contacts</a></li>
+        <li class="mobile-items">
+          <a href="./index.html" class="link">Studio</a>
+        </li>
+        <li class="mobile-items">
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-items">
+          <a href="" class="link">Contacts</a>
+        </li>
       </ul>
       <ul class="mobile-list list">
-        <li><a href="tel:+110001111111" class="mobile-item-phone link">+11 (000) 111-11-11</a></li>
-        <li><a href="mailto:info@devstudio.com" class="mobile-items-mail link">info@devstudio.com</a></li>
+        <li>
+          <a href="tel:+110001111111" class="mobile-item-phone link">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-items-mail link">info@devstudio.com</a>
+        </li>
       </ul>
       <ul class="mobile-socials list">
         <li class="footer-socials-item">
