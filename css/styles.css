@@ -1120,8 +1120,14 @@ body {
   |============================
 */
 .section-portfolio {
-  padding-top: 48px;
+  padding: 48px 0;
   /* padding: 96px 0 120px; */
+}
+
+@media only screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 64px;
+  }
 }
 
 .btn-list {
@@ -1162,8 +1168,22 @@ body {
 }
 
 .portfolio-list {
-  --items: 3;
+  /* --items: 3; */
   row-gap: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    width: 356px; 
+    --items: 2;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    width: 360px; 
+    --items: 3;
+  }
 }
 
 .tumb-portfolio {
