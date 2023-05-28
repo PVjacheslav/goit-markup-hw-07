@@ -44,6 +44,11 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -74,7 +79,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Banking App Interface Concept</h2>
+                  <h2 class="portfolio-title">Banking App Interface Concept</h2>
                   <p class="portfolio-text">App</p>
                 </div>
               </a>
@@ -94,7 +99,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Cashless Payment</h2>
+                  <h2 class="portfolio-title">Cashless Payment</h2>
                   <p class="portfolio-text">Marketing</p>
                 </div>
               </a>
@@ -114,7 +119,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Meditation App</h2>
+                  <h2 class="portfolio-title">Meditation App</h2>
                   <p class="portfolio-text">App</p>
                 </div>
               </a>
@@ -134,7 +139,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Taxi Service</h2>
+                  <h2 class="portfolio-title">Taxi Service</h2>
                   <p class="portfolio-text">Marketing</p>
                 </div>
               </a>
@@ -154,7 +159,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Screen Illustrations</h2>
+                  <h2 class="portfolio-title">Screen Illustrations</h2>
                   <p class="portfolio-text">Design</p>
                 </div>
               </a>
@@ -174,7 +179,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Online Courses</h2>
+                  <h2 class="portfolio-title">Online Courses</h2>
                   <p class="portfolio-text">Marketing</p>
                 </div>
               </a>
@@ -194,7 +199,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Instagram Stories Concept</h2>
+                  <h2 class="portfolio-title">Instagram Stories Concept</h2>
                   <p class="portfolio-text">Design</p>
                 </div>
               </a>
@@ -214,7 +219,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Organic Food</h2>
+                  <h2 class="portfolio-title">Organic Food</h2>
                   <p class="portfolio-text">Web Site</p>
                 </div>
               </a>
@@ -234,7 +239,7 @@
                   </p>
                 </div>
                 <div class="portfolio-wrapper">
-                  <h2 class="title">Fresh Coffee</h2>
+                  <h2 class="portfolio-title">Fresh Coffee</h2>
                   <p class="portfolio-text">Web Site</p>
                 </div>
               </a>
@@ -329,5 +334,95 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu modal-close-btn" type="button">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-items">
+          <a href="./index.html" class="link">Studio</a>
+        </li>
+        <li class="mobile-items">
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li class="mobile-items">
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-list list">
+        <li class="mobile-item-phone">
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-items-mail">
+          <a href="mailto:info@devstudio.com" class="link mobile-mail">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a
+            class="footer-socials-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linkedin icon"
+          >
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
