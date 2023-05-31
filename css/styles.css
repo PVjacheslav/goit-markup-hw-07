@@ -343,7 +343,7 @@ body {
 }
 
 .hero-title {
-  min-width: 320px;
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -760,6 +760,12 @@ body {
   margin-bottom: 72px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-media {
+    margin: 0;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .footer-media {
     margin-right: 80px;
@@ -846,7 +852,6 @@ body {
   background-color: transparent;
   outline: transparent;
   outline-offset: -1px;
-  margin-bottom: 16px;
 
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -894,6 +899,7 @@ body {
   align-items: center;
   padding: 8px 24px;
   margin: 0 auto;
+  margin-top: 16px;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -1164,6 +1170,10 @@ body {
   color: var(--iris);
 }
 
+.form-custom-check {
+  flex-shrink: 0;
+}
+
 /**
   |============================
   | Portfolio
@@ -1234,13 +1244,13 @@ body {
   background-color: var(--ocean);
 }
 
-.portfolio-list {
+.portfolio-item {
   /* --items: 3; */
   --indent-horizont: 48px;
 }
 
 @media only screen and (min-width: 768px) {
-  .portfolio-list {
+  .portfolio-item {
     width: 356px;
   }
 }
@@ -1252,8 +1262,13 @@ body {
 }
 
 @media only screen and (min-width: 1158px) {
-  .portfolio-list {
+  .portfolio-item {
     width: 360px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
     --items: 3;
   }
 }
