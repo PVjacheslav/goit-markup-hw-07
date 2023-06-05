@@ -853,6 +853,7 @@ body {
   outline: transparent;
   outline-offset: -1px;
 
+
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
